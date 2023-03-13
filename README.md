@@ -16,10 +16,12 @@ To run the tests, you need to inform two environment variables:
 `BASE_URL`: url target that will be tested
 `LOCALE`: in which country will the test be performed. Case sensitive, inform in lower case. e.g. `en-us`
 
-`Informing the two variables, just run the following command:
-`BASE_URL=https:/site.to.test LOCALE=en-us npm run test:e2e` 
+Informing the two variables, just run the following command:
+`BASE_URL=https://site.to.test LOCALE=en-us npm run test:e2e`
+ 
 If you want to view the execution through the browser, just run the following command:
+
 `BASE_URL=https:/site.to.test LOCALE=en-us npm run test:e2e:headed`
 
 For docker execution, just run the following command:
-`docker run -it --rm -e BASE_URL=https://www.lego.com/ -e LOCALE=en-us store-test-playwright`
+`docker run -it --rm -e BASE_URL=https://site.to.test/ -e LOCALE=en-us store-test-playwright`
