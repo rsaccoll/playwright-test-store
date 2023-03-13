@@ -17,4 +17,4 @@ jobs:
       - name: install playwright browsers
         run: npx playwright install --with-deps
       - name: npm run test:e2e
-        run: BASE_URL=${{ secrets.BASE_URL }} LOCALE=${{ secrets.LOCALE }} npm run test:e2e:ci
+        run: BASE_URL=${{ secrets.BASE_URL }} LOCALE=${{ secrets.LOCALE }} npm run test:e2e
