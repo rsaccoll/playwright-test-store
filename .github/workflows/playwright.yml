@@ -4,6 +4,16 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      testRun:
+        description: 'Test run'
+        default: 'regular'
+        type: choice
+        options:
+          - smoke
+          - sanity
+          - regular
 
 jobs:
   e2e_tests:
